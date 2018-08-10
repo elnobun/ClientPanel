@@ -8,7 +8,7 @@ class AppNavbar extends Component {
       <nav className="navbar navbar-expand-md navbar-dark bg-primary mb-4">
         <div className="container">
           <Link exact to="/" className="navbar-brand">
-            <i class="fas fa-database" />&nbsp; Client Panel Manager
+            <i className="fas fa-database" />&nbsp; Client Panel Manager
           </Link>
           <button
             type="button"
