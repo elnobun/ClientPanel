@@ -4,15 +4,16 @@ import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase';
 import { reduxFirestore, firestoreReducer } from 'redux-firestore';
 import firebase from 'firebase';
 import 'firebase/firestore';
+require('dotenv').config();
 
 // configure firebase
 const firebaseConfig = {
-  apiKey: 'AIzaSyCJhLkvbo2FjLr9iFKsZq_FEghaUU2AGfM',
-  authDomain: 'clientpanel-66e9d.firebaseapp.com',
-  databaseURL: 'https://clientpanel-66e9d.firebaseio.com',
-  projectId: 'clientpanel-66e9d',
-  storageBucket: 'clientpanel-66e9d.appspot.com',
-  messagingSenderId: '911942528348'
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID
 };
 
 // configure react-redux-firebase
