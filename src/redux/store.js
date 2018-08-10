@@ -4,7 +4,6 @@ import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase';
 import { reduxFirestore, firestoreReducer } from 'redux-firestore';
 import firebase from 'firebase';
 import 'firebase/firestore';
-require('dotenv').config();
 
 // configure firebase
 const firebaseConfig = {
