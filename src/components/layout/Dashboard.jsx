@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 
 const Dashboard = props => {
   return (
-    <div className="row mt-4">
+    <div className="row">
       <div className="col-md-10">
         <Clients />
       </div>
